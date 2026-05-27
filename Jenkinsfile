@@ -5,7 +5,8 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                git 'https://github.com/muskan922/react-jenkins.git'
+                git branch: 'main',
+                url: 'https://github.com/muskan922/react-jenkins.git'
             }
         }
 
